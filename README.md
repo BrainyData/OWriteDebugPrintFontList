@@ -2,7 +2,7 @@
 
 This debug library is used for producing three PDF files that list installed fonts in various ways for the purpose of investigating font related issues.
 
-To build the library you will require the following external components by Brainy Data; OWrite and PDFDevice. If you do not have them, demo versions are available at https://www.brainydata.com/demos. Furthermore, additional files and libraries are required which can also be downloaded from the same location.
+To build the library you will require the following external components by Brainy Data; OWrite and PDFDevice. If you do not have them, demo versions are available at https://www.brainydata.com/demos.
 
 The specific downloads are:
 
