@@ -1,0 +1,25 @@
+{
+	"ident": 1022,
+	"order": 5,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kRightJst",
+		"desgroup": 0,
+		"deslock": false,
+		"fieldstyle": "",
+		"floating": false,
+		"font": 4,
+		"fontextra": 0,
+		"fontsize": 9,
+		"fontstyle": "kBold",
+		"height": -1,
+		"left": 15.415,
+		"lineno": 1,
+		"lineoffset": 0.0,
+		"printontop": false,
+		"text": "Bold/Italic/Passed",
+		"textcolor": "RGB(8,0,0)",
+		"userinfo": "",
+		"width": 3.564
+	}
+}

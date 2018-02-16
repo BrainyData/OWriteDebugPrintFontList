@@ -1,0 +1,21 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Calculate $cdevice as kDevPdf
+	If sys(6)='X'
+		Calculate root_path as '/_debug/'
+	Else
+		Calculate root_path as 'c:\_debug\'
+	End If
+	
+	Do $cdevice.$setparam(kDevPdfFileName,con(root_path,'OWriteFontListTest.pdf'))
+	Set report name repOWriteFontList
+	Print report
+	
+	Do $cdevice.$setparam(kDevPdfFileName,con(root_path,'OmnisWinFontList.pdf'))
+	Set report name repOmnisFontList
+	Print report
+	
+	Do $cdevice.$setparam(kDevPdfFileName,con(root_path,'OmnisRepFontList.pdf'))
+	Set report name repOmnisFontList
+	Print report
+	
+	OK message  {Please zip and send us the folder at "[root_path]"}

@@ -1,0 +1,25 @@
+{
+	"ident": 1021,
+	"order": 4,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kLeftJst",
+		"desgroup": 0,
+		"deslock": false,
+		"fieldstyle": "",
+		"floating": false,
+		"font": 4,
+		"fontextra": 0,
+		"fontsize": 9,
+		"fontstyle": "kBold",
+		"height": -1,
+		"left": 10.653,
+		"lineno": 1,
+		"lineoffset": 0.0,
+		"printontop": false,
+		"text": "Omnis Font Name",
+		"textcolor": "RGB(8,0,0)",
+		"userinfo": "",
+		"width": 3.985
+	}
+}

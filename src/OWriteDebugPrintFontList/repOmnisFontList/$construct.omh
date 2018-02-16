@@ -1,0 +1,14 @@
+;  Enter your initialization code here
+Do ivOmnisFontList.$define(FontName,TrueType)
+If cvDoneWindows
+	Do FontOps.$replistfonts(ivOmnisFontList)
+	Calculate cvDoneWindows as kFalse
+Else
+	Do FontOps.$winlistfonts(ivOmnisFontList)
+	Calculate cvDoneWindows as kTrue
+End If
+
+For ivOmnisFontList.$line from 1 to ivOmnisFontList.$linecount step 1
+	Do $cinst.$printrecord()
+End For
+Do $cinst.$endprint()

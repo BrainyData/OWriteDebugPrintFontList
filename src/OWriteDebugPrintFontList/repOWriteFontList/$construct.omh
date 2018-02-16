@@ -1,0 +1,26 @@
+;  Enter your initialization code here #L1
+
+;  fetch the Omnis font list for testing
+Do ivOmnisFontList.$define(FontName,TrueType)
+Do FontOps.$winlistfonts(ivOmnisFontList)
+For ivOmnisFontList.$line from 1 to ivOmnisFontList.$linecount step 1
+	Calculate AllFonts as con(AllFonts,ivOmnisFontList.C1,'+',chr(13))
+End For
+Do FontOps.$replistfonts(ivOmnisFontList)
+For ivOmnisFontList.$line from 1 to ivOmnisFontList.$linecount step 1
+	Calculate AllFonts as con(AllFonts,ivOmnisFontList.C1,'+',chr(13))
+End For
+
+;  fetch the OWrite font list
+Do OWrite.$getfontlist(ivFontFamilyList)
+
+;  test and print
+For ivFontFamilyList.$line from 1 to ivFontFamilyList.$linecount step 1
+	Calculate ivCurTypeFaceList as ivFontFamilyList.Typefaces
+	For ivCurTypeFaceList.$line from 1 to ivCurTypeFaceList.$linecount step 1
+		Calculate ivPassed as pos(con(ivCurTypeFaceList.OmnisFontName,'+'),AllFonts)
+		Do $cinst.$printrecord()
+	End For
+End For
+
+Do $cinst.$endprint()
