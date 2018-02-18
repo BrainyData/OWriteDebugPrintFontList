@@ -1,0 +1,19 @@
+
+;  fetch and save all PDF device parameters
+Do $devices.[kDevPdf].$getparam(kDevPdfAll) Returns deviceParms
+Do ivSavedPDFSettings.$assign(deviceParms)
+Do ivSaved.$assign(kTrue)
+
+;  calculate outline tree setting based on field called FamilyName
+Calculate OuFontName as $clib.$prefs.$reportfonts.[$reports.repOWriteFontList.$objs.FamilyName.$font].$fontname
+Calculate OuFontSize as $reports.repOWriteFontList.$objs.FamilyName.$fontsize
+Calculate OuFontStyle as $reports.repOWriteFontList.$objs.FamilyName.$fontstyle
+
+;  set options for our document outline trees
+;  all text objects that produce the following output will be added to the outline tree
+Do OuList.$define(OuFontName,OuFontSize,OuFontStyle)
+Do OuList.$add(OuFontName,OuFontSize,OuFontStyle)     ;; Heading 1
+Calculate deviceParms.Outlines as OuList
+
+;  now write back the modified parameters
+Do $devices.[kDevPdf].$setparam(kDevPdfAll,deviceParms)

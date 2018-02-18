@@ -10,7 +10,7 @@
 		"floating": false,
 		"font": 4,
 		"fontextra": 0,
-		"fontsize": 9,
+		"fontsize": 8,
 		"fontstyle": "kBold",
 		"height": -1,
 		"left": 5.398,
@@ -18,7 +18,7 @@
 		"lineoffset": 0.0,
 		"printontop": false,
 		"text": "Typeface",
-		"textcolor": "RGB(8,0,0)",
+		"textcolor": "kDarkGray",
 		"userinfo": "",
 		"width": 3.985
 	}

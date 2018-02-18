@@ -1,0 +1,2 @@
+;  when library quits, make sure PDF settings are restored
+Do $cinst.$restorePDFBookmarkStyles

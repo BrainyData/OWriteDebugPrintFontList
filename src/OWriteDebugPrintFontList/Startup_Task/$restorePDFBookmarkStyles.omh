@@ -1,0 +1,5 @@
+;  restore PDF device parameters from the saved settings
+If ivSaved
+	Do $devices.[kDevPdf].$setparam(kDevPdfAll,ivSavedPDFSettings)
+	Do ivSaved.$assign(kFalse)
+End If

@@ -1,6 +1,6 @@
 {
 	"classtype": "kTask",
-	"internalversion": 12,
+	"internalversion": 17,
 	"tvardefs": [
 
 	],
@@ -8,7 +8,20 @@
 
 	],
 	"ivardefs": [
-
+		{
+			"name": "ivSaved",
+			"order": 2,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "ivSavedPDFSettings",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		}
 	],
 	"properties": {
 		"collectperformancedata": false,
@@ -20,7 +33,7 @@
 		"editordata": "",
 		"external": false,
 		"issupercomponent": false,
-		"moddate": "2017-04-21 07:55:00",
+		"moddate": "2018-02-18 08:41:45",
 		"showascheckedout": false,
 		"userinfo": "",
 		"version": ""

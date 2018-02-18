@@ -1,4 +1,6 @@
 On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do $ctask.$setPDFBookmarkStyles
+	
 	Calculate $cdevice as kDevPdf
 	If sys(6)='X'
 		Calculate root_path as '/_debug/'
